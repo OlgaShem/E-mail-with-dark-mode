@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            line-height: 26px;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        body, .body-wrap {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+        }
+
+        .container {
+            display: block;
+            clear: both;
+            max-width: 580px;
+            margin: 0 auto;
+        }
+
+        .container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .content {
+            background-color: #8FBC8F;
+            background-image: url("img/background-light.png");
+            background-size: cover;
+            padding: 30px 35px;
+        }
+
+        .container .content.footer p {
+            max-width: 90%;
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+            margin-bottom: 0;
+        }
+
+        .container .content.footer a {
+            color: #777777;
+        }
+
+        li {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+
+        .wrap {
+            width: 280px;
+            height: 220px;
+            background: #fff;
+            margin: 0 auto;
+            padding-top: 30px;
+            border-radius: 30px;
+        }
+
+        .list {
+            padding-bottom: 30px;
+        }
+
+        .list-item {
+            color: #000;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .title {
+            max-width: 400px;
+            font-size: 23px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 40px 20px;
+            margin: 0 auto;
+        }
+
+        .text {
+            font-size: 14px;
+            line-height: 26px;
+            text-align: center;
+            font-weight: normal;
+            margin: 0 auto;
+        }
+
+        @media only screen and (min-width:920px) {
+            .text {
+                width: 70%;
+            }
+        }
+
+        .button {
+            display:inline-block;
+            border-radius:30px;
+            background:#5AC0B9;
+            font-size: 14px;
+            text-decoration:none;
+            padding:10px 25px;
+            margin-top: 20px
+        }
+
+        .ready {
+            position: absolute;
+            left: 50%;
+            width: 160px;
+            background: #000;
+            color: #fff;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .enjoy {
+            width: 160px;
+            background: #fff;
+            color:#000;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .border {
+            border-bottom: 1px solid #fff;
+        }
+
+        .app-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .app {
+            display: block;
+            height: 38px;
+            max-width: 140px;
+            margin-right: 20px;
+        }
+
+        .app-dark {
+            display: none;
+        }
+
+        .checkbox {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .checkbox + label {
+            padding-left: 40px;
+            margin-right: 40px;
+            cursor: pointer;
+        }
+
+        .checkbox + label:before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            background: #fff;
+            border: 4px solid #000;
+        }
+
+        .checkbox:checked + label:before {
+            background: #000;
+        }
+
+        .footer-text {
+            margin-top: 10px;
+            color: #000;
+        }
+
+        .footer-link {
+            color: #000;
+        }
+
+        @media (prefers-color-scheme: dark) {
+
+            .dark {
+                background-color: #000;
+                color: #FFF;
+            }
+
+            .content {
+                background-image: url("img/background.png");
+            }
+
+            .app-dark {
+                display: block;
+                height: 38px;
+                max-width: 140px;
+                margin-right: 20px;
+            }
+
+            .app {
+                display: none;
+            }
+
+            .footer-text {
+                margin-top: 10px;
+                color: #F7F7F7;
+                opacity: 0.7;
+            }
+
+            .footer-link {
+                color: #F7F7F7;
+                opacity: 0.7;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<table class="body-wrap">
+    <tr>
+        <td class="container">
+            <table>
+                <tr>
+                    <td class="content dark">
+                        <table>
+                            <tr class="container">
+                                <a href="" target="_blank" >
+                                    <img alt="logo" height="auto" src="img/circle.png" class="logo" width="50px">
+                                </a>
+                            </tr>
+
+                            <table>
+                                <tr>
+                                    <td align="center">
+                                        <img src="img/main.png" alt="main">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="list">
+                                        <h2 class="title">Get ready for a good night with Sleep booster:</h2>
+                                        <ul class="wrap">
+                                            <li>
+                                                <input type="checkbox" class="checkbox" id="checkbox1" >
+                                                <label for="checkbox1"></label>
+                                                <a class="list-item"> Check your patterns</a>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="checkbox" id="checkbox2" >
+                                                <label for="checkbox2"></label>
+                                                <a class="list-item">Set up a smart alarm</a>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="checkbox" id="checkbox3" >
+                                                <label for="checkbox3"></label>
+                                                <a class="list-item">Start your Sleep Ritual</a>
+                                            </li>
+                                           <a href="#" class="button ready" target="_blank"> GET READY </a>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="border">
+                                <tr>
+                                    <td>
+                                        <p class="text">
+                                            Subscribe to a Premium account and enjoy all features on {{ project_title }}!
+                                        </p>
+                                        <table>
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="#" class="button enjoy" target="_blank"> ENJOY PREMIUM </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td align="center" class="app-buttons">
+                                        <a href="#" target="_blank"><img src="img/google.png" alt="google" class="app" max-width="140px">
+                                            <img src="img/google-dark.png" class="app-dark" alt="google" max-width="140px">
+                                        </a>
+                                        <a href="#" target="_blank"><img src="img/apple.png" class="app" alt="apple" max-width="140px">
+                                            <img src="img/apple-dark.png" class="app-dark" alt="apple" max-width="140px">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td class="footer" align="center">
+                                        <p class="footer-text">You've received this email because you've signed up at <br><a href="mailto:" class="footer-link">app.get-namesite.com</a> You can refuse to receive news and special offers by
+                                            <a href="#" class="footer-link">unsubscribing</a> from these emails.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        line-height: 26px;
+    }
+
+    img {
+		display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    body, .body-wrap {
+        width: 100%;
+        height: 100%;
+        background: #f8f8f8;
+    }
+
+    .container {
+        display: block;
+        clear: both;
+        margin: 0 auto;
+        max-width: 580px;
+    }
+
+    .container table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .content {
+        background: white;
+        padding: 30px 35px;
+    }
+
+    .container .content.footer p {
+		max-width: 90%;
+        margin-bottom: 0;
+        color: #777777;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .container .content.footer a {
+        color: #777777;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .number {
+        float: left;
+        max-width: 30px;
+        margin: 0 10px 0 30px;
+    }
+
+    @media only screen and (min-width:768px) {
+        .number {
+            margin: 0 10px 0 100px;
+        }
+    }
+
+    .list {
+        padding-bottom: 50px;
+    }
+
+    .list-item {
+        color: #18716C;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .hello-title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 135%;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .text {
+		width: 70%;
+        font-size: 12px;
+        line-height: 135%;
+        margin: 0 auto;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .red {
+        position: relative;
+        background: #FFF8E6;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .diamond {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .button {
+        display:inline-block;
+        background:#5AC0B9;
+        font-size: 14px;
+        text-decoration:none;
+        padding:10px 25px;
+        border-radius:30px;
+        margin-top: 20px
+    }
+
+    .white {
+        background: #fff;
+        color: #5CBFBA;
+    }
+
+    .blue {
+        background: #5AC0B9;
+        color:#fff;
+    }
+
+    .app-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .app {
+        height: 38px;
+        max-width: 140px;
+        margin-right: 20px;
+        display: block;
+    }
+
+    .app-dark {
+        display: none;
+    }
+
+    .padding-top {
+        padding-top: 65px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+        .dark {
+            background: #423c3c;
+            color: #FFF;
+        }
+
+        .red {
+            background: #BC8F8F;
+        }
+
+        .list-item {
+            color: #40E0D0;
+        }
+
+        .content {
+            background: #423c3c;
+        }
+
+        .app-dark{
+            height: 38px;
+            max-width: 140px;
+            margin-right: 20px;
+            display: block;
+        }
+
+        .app {
+            display: none;
+        }
+
+        .container .content.footer p {
+          color: #fff;
+        }
+
+        .container .content.footer a {
+            color: #fff;
+        }
+    }
+
+    </style>
+</head>
+    <body>
+        <table class="body-wrap">
+            <tr>
+                <td class="container">
+                    <table>
+                        <tr>
+                            <td class="content dark">
+                                <table>
+                                    <tr class="container">
+                                        <a href="" target="_blank" >
+                                            <img alt="logo" height="auto" src="img/logo.png" class="logo" width="40px">
+                                        </a>
+                                    </tr>
+                                    <table>
+                                        <tr>
+                                            <td class="red">
+                                                <h1 class="hello-title">Hello and welcome to <br>{{ project_title }}!</h1>
+                                                <p class="text"><span class="bold"> My name is Charlotte,  Language Assistant.<br></span>
+                                                    On behalf of the whole team, I would love to thank you for choosing us! <span class="bold">{{ project_title }}</span> is the right place to boost your English!
+                                                </p>
+                                                <table>
+                                                  <tr>
+                                                    <td align="center">
+                                                        <a href="#" class="button blue" target="_blank"> Enrich my vocabulary </a>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td align="center">
+                                                <img src="img/london.png" alt="london">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="list">
+                                                <h2 class="title">The richer your vocabulary is,<br> the better you:</h2>
+                                                <ul>
+                                                    <li><img src="img/pic-1.png" class="number" alt="1"><p class="list-item"> Express yourself in writing</p></li>
+                                                    <li><img src="img/pic-2.png" class="number" alt="2"><p class="list-item">Communicate ideas to others</p></li>
+                                                    <li ><img src="img/pic-3.png" class="number" alt="3"><p class="list-item">Comprehend novels and textbooks</p></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td class="red padding-top">
+                                                <img src="img/diamond.png" class="diamond" alt="diamond"/>
+                                                <h2 class="title">The secret of getting ahead is getting started.</h2>
+                                                <p class="text">
+                                                    Get premium access to {{ project_title }}  and improve your  vocabulary faster!
+                                                </p>
+                                                <table>
+                                                    <tr>
+                                                        <td align="center">
+                                                            <a href="#" class="button white" target="_blank"> Improve my vocabulary </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td align="center" class="app-buttons">
+                                                <a href="#" target="_blank"><img src="img/google.png" alt="google" class="app" max-width="140px">
+                                                    <img src="img/google-dark.png" class="app-dark" alt="google" max-width="140px">
+                                                </a>
+                                                <a href="#" target="_blank"><img src="img/apple.png" alt="apple" class="app" max-width="140px">
+                                                    <img src="img/apple-dark.png" alt="apple" class="app-dark" max-width="140px">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td class="content footer" align="center">
+                                                <p>You've received this email because you've signed up at <br><a href="mailto:">app.get-namesite.com</a> You can refuse to receive news and special offers by
+                                                    <a href="#">unsubscribing</a>  from these emails.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
